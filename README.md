@@ -6,6 +6,10 @@ Translate German text into the Bavarian dialect using rule-based transformations
 
 - PHP 8 or higher  
 
+## Example
+
+https://timanthonyalexander.de/translator
+
 ## Installation
 
 ```bash
