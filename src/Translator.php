@@ -6,15 +6,6 @@ namespace TimAlexander\Bavarian;
 
 final class Translator
 {
-    public const array SUB_REPLACEMENTS_GLOBAL = [
-        'nicht' => 'ned',
-        'ein' => 'a',
-        'eine' => 'a',
-        'und' => 'und',
-        'auch' => 'a',
-        'gut' => 'guad',
-    ];
-
     public const array SUB_REPLACEMENTS_ENDINGS = [
         'chen' => 'al',
         'lein' => 'al',
@@ -25,6 +16,9 @@ final class Translator
         'iel' => 'ui',
         'ag' => 'og',
         'e' => 'a',
+        'er' => 'a',
+        'en' => 'n',
+        'em' => 'm',
     ];
 
     public const array SUB_REPLACEMENTS_START = [
@@ -32,6 +26,9 @@ final class Translator
         'ver' => 'fa',
         'zer' => 'za',
         'be' => 'b\'',
+        'emp' => 'empf',
+        'ent' => 'ent',
+        'er' => 'ea',
     ];
 
     public const array REPLACEMENTS_ENTIRE_WORDS = [
@@ -52,19 +49,50 @@ final class Translator
         'warum' => 'warum',
         'ja' => 'jo',
         'nein' => 'na',
-        'nicht' => 'ned',
         'will' => 'wui',
+        'müssen' => 'miassn',
+        'sagen' => 'sogn',
+        'machen' => 'macha',
+        'gehen' => 'geh',
+        'kommen' => 'kimm',
+        'sehen' => 'sehn',
+        'kann' => 'ko',
+        'können' => 'kenna',
+        'danke' => 'dangge',
+        'bitte' => 'biddschee',
+        'viel' => 'vui',
+        'hier' => 'do',
+        'dort' => 'drent',
+        'oben' => 'om',
+        'unten' => 'untn',
+        'links' => 'links',
+        'rechts' => 'rechts',
+        'schön' => 'schee',
+        'groß' => 'groaß',
+        'klein' => 'kloa',
+        'essen' => 'essn',
+        'trinken' => 'dringa',
+        'nicht' => 'ned',
+        'ein' => 'oa',
+        'eine' => 'oane',
+        'kein' => 'koan',
+        'keine' => 'koane',
+        'auch' => 'a',
+        'gut' => 'guad',
+        'jetzt' => 'jetzat',
+        'rauchen' => 'raucha',
+        'laufen' => 'laffa',
+        'fahren' => 'fahrn',
+        'denken' => 'denka',
+        'hallo' => 'servus',
+        'tschüss' => 'pfiat di',
+        'guten' => 'guadn',
+        'morgen' => 'morgn',
+        'tag' => 'toag',
     ];
 
     public function translate(string $text): string
     {
-        // Global replacements
-        $text = str_ireplace(
-            array_keys(self::SUB_REPLACEMENTS_GLOBAL),
-            array_values(self::SUB_REPLACEMENTS_GLOBAL),
-            $text
-        );
-
         $words = preg_split('/\b/u', $text, -1, PREG_SPLIT_NO_EMPTY);
 
         foreach ($words as $key => $word) {
