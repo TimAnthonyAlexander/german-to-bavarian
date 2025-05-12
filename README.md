@@ -30,7 +30,7 @@ $translator = new Translator();
 $text = 'Ich habe heute einen guten Tag und möchte etwas erzählen.';
 $bavarian = $translator->translate($text);
 
-echo $bavarian; // i ham hoid an guadn Tog und wui ebba sogn
+echo $bavarian; // I hob heit oanen guadn Toag und möchta etwas eazähln.
 ```
 
 ## Features

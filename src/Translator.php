@@ -72,7 +72,9 @@ final class Translator
         'zehn'      => 'zehn',
 
         'haben'     => 'ham',
+        'habe'      => 'hob',
         'hat'       => 'hot',
+        'einen'     => 'oanen',
         'ist'       => 'is',
         'war'       => 'woar',
         'werden'    => 'wern',
