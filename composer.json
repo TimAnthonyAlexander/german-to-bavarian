@@ -1,0 +1,15 @@
+{
+    "name": "tim.alexander/bavarian",
+    "autoload": {
+        "psr-4": {
+            "TimAlexander\\Bavarian\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tim Anthony Alexander",
+            "email": "info@timanthonyalexander.de"
+        }
+    ],
+    "require": {}
+}
